@@ -1,0 +1,503 @@
+*{
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body{
+    padding-top: 80px;
+    background-color: #111;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.loading-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: #111;   
+    color: black;
+}
+
+                    /*spinner*/
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 300px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: aliceblue;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+                /*  end of spinner*/  
+
+
+.main-color{
+    color: #ffb400;
+}
+
+.active{
+    background-color: #ffb400;
+    color: aliceblue;
+}
+
+.under-line{
+    border-bottom: 2px solid #ffb400;
+}
+
+.lead{
+    font-size: 16px;
+    color: #b7b7b7;
+}
+
+
+.btn{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    background-color: #ffb400;
+    border-radius: 15px;
+    padding: 9px 18px;
+    transition: padding 0.5s ease;
+    outline: 0 !important;
+}
+
+.btn:hover{
+    padding: 9px 25px;
+}
+
+.top-btn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffb400;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    display: none;
+    z-index: 1000;
+}
+
+.top-btn:hover{
+    opacity: 1;
+}
+.top-btn i{
+    font-size: 200%;
+    background-color: transparent;
+}
+
+
+.option-color{
+    position: fixed;
+    top: 402px;
+    left: 5px;
+    z-index: 9999999;
+}
+
+.option-color i{
+    margin-left: 5px;
+    position: fixed;
+    top: 370px;
+    left: 5px;
+}
+
+.color-cont{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    z-index: 9999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    opacity: 0.5;
+    transition: opacity 0.8s;
+    display: none;
+}
+
+
+.color-cont:hover{
+    opacity: 1;
+}
+
+
+.option-color ul li{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 3px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#gear{
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+    color: #ffb400;
+}
+
+#gear:hover{
+    opacity: 1;
+}
+
+.claer{
+    clear: both;
+}
+
+/*              bootstrap   overriding           */
+/*  *****************  navbar             styling         **********   */
+
+.navbar-inverse .navbar-nav > li > a{
+    color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.4s ease;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover{
+    color: #ffb400;
+}
+
+
+.nav-header{
+    font-family: 'MuseoModerno', cursive;
+    margin-left: 20px;
+    font-size: 200%;
+    padding: 18px 15px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+    margin-left: 5px;
+}
+
+.container-fluid > .navbar-collapse {
+    max-height: 380px;
+}
+
+.navbar-toggle{
+    margin-right: 30px;
+}
+
+.navbar-inverse .navbar-toggle{
+    background-color: #ffb400;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+    background-color: #ffb400;
+}
+
+.navbar-inverse .navbar-text{
+    color: #ffb400;
+}
+
+
+/********************  home         styling ************/
+
+.home{
+    margin-top: 50px;
+}
+
+.home div p {
+    max-width: 500px;
+}
+
+#my-img{
+    border-left: 5px solid #ffb400;
+    width: auto;
+}
+
+/*       ****   About Styling   *******    */
+
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.about h2{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.about-list{
+    list-style: none;
+}
+
+.about-list li {
+    padding-top: 25px;
+}
+
+
+.resume p{
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+/***************  skills       styling ************/
+
+.skills{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.skills h2{
+    letter-spacing: 2px;
+}
+
+.skills p{
+    line-height: 25px;
+    margin-top: 20px;    
+}
+
+
+.progress{
+    margin-top: 25px;
+    height: 25px;
+}
+
+.progress-bar{
+    background: #ffb400 !important;
+    margin: auto;
+    line-height: 25px;
+    transition: width 1.25s ease-in-out;
+}    
+
+/*            services        */
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services h2{
+    margin-bottom: 50px;
+}
+
+.services div div{
+    margin-bottom: 25px;
+}
+.services i{
+    color: #ffb400;
+}
+
+.services p{
+    color: #B0BEC5;
+    width: 250px;
+    margin: auto;
+}
+
+
+/* work section   styling       */
+
+.work{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.controllers{
+    margin-bottom: 25px;
+}
+
+.mixitup-control-active{
+    background-color: #ffb400 !important;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.controllers button{
+    background-color: transparent;
+    border: 2px solid #ffb400;
+    margin: 10px;
+    padding: 9px 18px;
+    border-radius: 10px;
+    transition: padding 0.5s ease;
+}
+
+.controllers button:hover{
+    padding: 9px 25px;
+}
+
+.mixitup-control-active{
+    background-color: #ffb400;
+    color: aliceblue;
+}
+
+.projects div img{
+    width: 100%!important;
+    height: 300px;
+    display: block;
+}
+
+.projects div img:hover{
+    
+}
+
+.projects div div:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #ffb400;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .3s ease;
+    opacity: 0.9;
+}
+
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* styling contact   section */
+
+.contact{
+    margin-top: 25px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: #263238;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact h4{
+    margin-bottom: 20px;
+}
+
+.contcat-form{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.contcat-form button{
+    width: 30%;
+    margin-top: 15px;
+}
+
+.form-control:focus{
+    border-color: #ffb400;
+    box-shadow: inset 0 1px 1px #ffb400, 0 0 8px #ffb400;
+}
+
+.blog-img{
+    border-radius: 25px;
+}
+
+.slick-prev{
+    display: none !important;
+}
+.slick-dots li button:before{
+    color: aliceblue !important;
+}
+.cont-stuff div div p{
+    margin-top: 15px;
+    font-weight: bold
+}
+.cont-stuff i{
+    margin-right: 12px;
+    transition: all 0.5s ease; 
+}
+
+.cont-stuff i:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.fa-facebook:hover{
+    color: #385898;
+}
+.fa-youtube:hover{
+    color: red;
+}
+.fa-instagram:hover{
+    color:#fb3958
+}
+.fa-twitter:hover{
+    color: rgba(29,161,242,1.00);
+}
+/*  footer           */
+footer{
+    background-color: #212121;
+}
+
+footer p {
+    margin-top: 20px;
+}
