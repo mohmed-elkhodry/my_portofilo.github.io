@@ -11,8 +11,7 @@
 body{
     padding-top: 80px;
     background-color: #111;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden !important;
 }
 
 .loading-overlay{
@@ -148,56 +147,38 @@ body{
 }
 
 
-.option-color{
-    position: fixed;
-    top: 402px;
-    left: 5px;
-    z-index: 9999999;
-}
-
-.option-color i{
-    margin-left: 5px;
-    position: fixed;
-    top: 370px;
-    left: 5px;
-}
-
 .color-cont{
+    position: fixed;
+    top: 300px;
+    left: 5px;
+    z-index: 99999;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 5px;
     z-index: 9999;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
     opacity: 0.5;
-    transition: opacity 0.8s;
-    display: none;
+    padding: 3px 1px;
+    transition: opacity 0.4s;
 }
 
-
+.color-cont ul{
+    margin: 0px;
+}
 .color-cont:hover{
     opacity: 1;
 }
 
 
-.option-color ul li{
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin-right: 3px;
+.color-cont ul li{
+    width: 15px;
+    height: 15px;
+    margin: 2px;
     border: 1px solid white;
     border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-#gear{
-    opacity: 0.5;
-    transition: opacity 0.6s ease;
-    color: #E53935;
-}
-
-#gear:hover{
-    opacity: 1;
-}
 
 .claer{
     clear: both;

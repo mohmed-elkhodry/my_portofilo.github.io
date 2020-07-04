@@ -14,14 +14,9 @@ $(document).ready(function () {
                           .eq(1).css("background-color", "#E53935").end()
                           .eq(2).css("background-color", "#43A047");
     
-    $("#gear").click(function () {
-        $(".color-cont").slideToggle(500);
-    });
-    
-    
+   
     $(".color-cont ul li").click(function () {
         $("link[href*='theme']").attr("href", $(this).attr("data-value"));
-        $(".color-cont").fadeOut(500);
     });  
     
     /*    nice scrolling */

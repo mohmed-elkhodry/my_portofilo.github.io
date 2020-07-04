@@ -43,7 +43,7 @@
         <!--        end of loading screen         -->
         
         <!--      --------scroll   to    top  button -------  -->
-        <button class="top-btn"><i class="fas fa-arrow-circle-up"></i></button>
+        <button class="top-btn"><i class="fas fa-arrow-circle-up text-center"></i></button>
         
         
         <!--        navigation    bar         -->
@@ -80,17 +80,14 @@
         
         
 <!--        color options           -->
-        <div class="option-color">
-            <div class="color-cont container-fluid">
-                <h6>color options</h6>
-                <ul class="list-unstyled">
-                    <li data-value="css/main_theme.css"></li>
-                    <li data-value="css/red_theme.css"></li>
-                    <li data-value="css/green_theme.css"></li>
-                    <div class="clear"></div>
-                </ul>
-            </div>
-            <i class="fas fa-cog fa-2x fa-spin" id="gear"></i>
+        
+        <div class="color-cont">
+            <ul class="list-unstyled">
+                <li data-value="css/main_theme.css"></li>
+                <li data-value="css/red_theme.css"></li>
+                <li data-value="css/green_theme.css"></li>
+                <div class="clear"></div>
+            </ul>
         </div>
         
 <!--        section home start       -->
@@ -154,7 +151,7 @@
         <section class="skills container" id="skills">
             <h2 class="text-center">My <span class="main-color">Skills</span></h2>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="10">
+                <div class="col-sm-6 col-xs-12 wow bounceInLeft" data-wow-duration="2s" data-wow-offset="25">
                     <h3><span class="under-line">Skills</span></h3>
                     <div class="progress bounceInLeft">
                       <div class="progress-bar first_prog" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
@@ -178,7 +175,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xs-12 wow bounceInRight" data-wow-duration="2s" data-wow-offset="10">
+                <div class="col-sm-6 col-xs-12 wow bounceInRight" data-wow-duration="2s" data-wow-offset="25">
                     <h3><span class="under-line">experince</span></h3>
                     <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<br> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                 </div>
@@ -362,7 +359,7 @@
           boxClass:     'wow',      // default
           animateClass: 'animated', // default
           offset:       0,          // default
-          mobile:       false,       // default
+          mobile:       true,       // default
           live:         true        // default
           }
         )
