@@ -445,6 +445,11 @@ body{
 .slick-prev{
     display: none !important;
 }
+@media(max-width: 992px){ 
+    .slick-next{
+        display: none !important;
+    }
+}
 .slick-dots li button:before{
     color: aliceblue !important;
 }

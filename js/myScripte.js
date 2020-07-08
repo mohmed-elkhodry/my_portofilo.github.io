@@ -17,7 +17,7 @@ $(document).ready(function () {
    
     $(".color-cont ul li").click(function () {
         $("link[href*='theme']").attr("href", $(this).attr("data-value"));
-    });  
+    });
     
     /*    nice scrolling */
     $("html").niceScroll({
@@ -81,6 +81,7 @@ $(document).ready(function () {
         }, 1000);
     });
     
+
     $(window).scroll(function () {
 		var scrollDistance = $(window).scrollTop();
 		$('section').each(function (i) {
